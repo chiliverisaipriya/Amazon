@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Amazon">
+  <test thread-count="0" name="smoke">
+	  <!--<packages>
+		  <package name="test"/>
+	  </packages>-->
+    <classes>
+      <class name="test.AmazonHomePage"/>
+      <class name="test.AmazonLoginPage"/>
+     <!-- <methods>
+		  <exclude name = "login.*"/>
+	  </methods>
+	  </class>-->
+    </classes>
+  </test> 
+  <test name="sanity">
+	  <classes>
+		 <!-- <class name="test.AmazonCartPage">
+		  <methods>
+			  <include name = "Cartpage2"/>
+		  </methods>
+		  </class>-->
+		  <class name="test.AmazonHomePage"/>
+		  
+	  </classes>
+	  
+  </test>
+  <!-- Test -->
+</suite> <!-- Suite -->
